@@ -23,15 +23,15 @@
 				    <input type="text" class="form-control" id="nombreUsuario" placeholder="Nombre y Apellido">
 				  </div>
 				  <div class="form-group">
-				    <label for="banco">Banco</label>
-				    <select onchange="val()" class="form-control" id="banco" placeholder="Seleccionar banco">
-				        <option value="Banco Nacion">Banco Nación - 18,5%</option>
-				        <option value="ICBC">ICBC - 18,18%</option>
-				        <option value="Banco Galicia">Banco Galicia - 16,5% </option>
-				        <option value="Banco Frances">Banco Francés - 15,75%</option>
-				        <option value="Hipotecario">Banco Hipotecario - 15,5%</option>
-				        <option value="	Santander">Santander Río - 15%</option>
-				        <option value="Macro">Banco Macro - 10,7%</option>
+				    <label for="banco">Banco</label>				   
+					 <select onchange="val()" class="form-control" id="banco" placeholder="Seleccionar banco">
+				        <option value="nacion">Banco Nación - 18,5%</option>
+				        <option value="icbc">ICBC - 18,18%</option>
+				        <option value="galicia">Banco Galicia - 16,5% </option>
+				        <option value="frances">Banco Francés - 15,75%</option>
+				        <option value="hipotecario">Banco Hipotecario - 15,5%</option>
+				        <option value="santander">Santander Río - 15%</option>
+				        <option value="macro">Banco Macro - 10,7%</option>
 					</select>
 				 </div>
 				  <div class="form-group">
@@ -65,13 +65,24 @@
 		</form>
 
 		<div id="bloque final">
-			<p>El resultado de tu plao fijo es <span id="texto"></span></p>
+			<p>El resultado de tu plazo fijo es <span id="texto"></span></p>
 		</div>
 	</div>
 </div>
 
 
 <script type="text/javascript">
+
+	var tasa = {
+		nacion: 18.5,
+		icbc:18.18,
+		galicia: 16.5,
+		frances:15.75,
+		hipotecario:15.5,
+		santander:15,
+		macro:10.7
+	};
+
 	window.addEventListener("load",haceTodo);
 
 	function haceTodo(){
