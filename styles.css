@@ -1,0 +1,15 @@
+#texto{
+	color: red;
+	font-weight: bold;
+}
+
+#texto-tasa{
+	color: green;
+	font-weight: bold;
+}
+
+#bloquefinal{
+	background-color: #EEEEEE;
+	font-family: sans-serif;
+	font-size: 14px;
+}
